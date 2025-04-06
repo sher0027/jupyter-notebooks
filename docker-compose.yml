@@ -4,7 +4,7 @@ services:
     ports:
       - "8000:8888"  # Map the container's port 8888 to the host's port 8000
     volumes:
-      - /home/jane/risk/notebooks:/home/jane/notebooks # Mount a local directory to store Jupyter notebooks
+      - ${HOME}/jupyter-notebooks/notebooks:/home/${USER}/notebooks # Mount a local directory to store Jupyter notebooks
     environment:
       - JUPYTER_TOKEN=my-token
     restart: unless-stopped  # Restart the container unless explicitly stopped

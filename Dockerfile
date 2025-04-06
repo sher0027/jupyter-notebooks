@@ -5,7 +5,7 @@ FROM jupyter/base-notebook
 USER root
 
 # Set the working directory
-WORKDIR /home/jane
+WORKDIR /home/${USER}
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
