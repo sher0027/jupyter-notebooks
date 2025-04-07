@@ -1,0 +1,15 @@
+name: jupyter-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - networkx
+  - pymc
+  - numpy
+  - arviz
+  - aesara
+  - matplotlib
+  - jupyter
+  - pip
+  - pip:
+    - pgmpy
